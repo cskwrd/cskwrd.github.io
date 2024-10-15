@@ -3,11 +3,179 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>BlogFax</title>
+		<title>RISC-V: The New Kid on the Chip</title>
 		<meta name="description" content="Where curiosity crashes into technology, well, programming most of the time.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="BlogFax">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -399,7 +567,7 @@ header {
 		<header>
 			<div class="header-top">
 				<div class="header-title">
-					<span>P953</span>
+					<span>P185</span>
 					<span class="service-name">BLOGFAX</span>
 				</div>
 				<div class="header-date" id="current-date"></div>
@@ -410,7 +578,7 @@ header {
 					<div class="block block-green"></div>
 					<div class="block block-blue"></div>
 				</div>
-				<div class="main-title">ERROR</div>
+				<div class="main-title">POST</div>
 				<div class="header-blocks">
 					<div class="block block-red"></div>
 					<div class="block block-green"></div>
@@ -421,19 +589,39 @@ header {
 
 		<main id="skip">
 			<heading-anchors>
-				<h1 id="content-not-found">Content not found.</h1>
-<p>Go <a href="/eleventy-base-blog/">home</a>.</p>
-<!--
+				
+<h1 id="risc-v-the-new-kid-on-the-chip">RISC-V: The New Kid on the Chip</h1>
 
-Read more: https://www.11ty.dev/docs/quicktips/not-found/
+<ul class="post-metadata">
+	<li><time datetime="2023-08-01">01 August 2023</time></li>
+	<li><a href="/eleventy-base-blog/blog/tags/risc-v/" class="post-tag">risc-v</a>, </li>
+	<li><a href="/eleventy-base-blog/blog/tags/isa/" class="post-tag">isa</a></li>
+</ul>
 
-This will work for both GitHub pages and Netlify:
+<p>RISC-V is a new instruction set architecture (<abbr>ISA</abbr>). To be extremely accurate, RISC-V is a <em>family</em> of ISAs, but it is common to refer to them as <em>the</em> RISC-V ISA. An ISA specifies the behaviors a given CPU manufacturer's processor implementation must exhibit in order to maintain binary compatibility with other implementations. To more easily reason and speak about ISAs, they are often given a classification. The seemingly most common classification being the architectural complexity, or more simply put, how many instructions are included in the specification. Using this form of classification, an ISA falls into one of two categories:</p>
+<ul>
+<li>Complex instruction set computers (<a href="https://en.wikipedia.org/wiki/Complex_instruction_set_computer">CISC</a>)</li>
+<li>Reduced instruction set computers (<a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer">RISC</a>)</li>
+</ul>
+<p>There are a variety of different ISAs in existence. Well-known ISAs include <code>x86</code> (CISC, commonly used by AMD and Intel), and <code>arm</code> (RISC, commonly used by Apple and Google).</p>
+<p>RISC-V differentiates itself from many other ISAs through its modular design. The modularity of RISC-V's design allows for several base integer ISA variants and numerous optional extensions. The combination of these bases and extensions allow for implementations  supporting embedded systems all the way up to supercomputer's with giant 128 bit address spaces.</p>
+<h2 id="the-big-happy-risc-v-isa-family-aww">The Big, Happy, RISC-V ISA Family (Aww!)</h2>
+<p>From its name, it is obvious that the RISC-V ISA is classified as a <code>RISC</code> ISA. What may not be immediately obvious is that it's what's known as a <em>load-store</em> architecture. This means that the instructions fit into two categories:</p>
+<ul>
+<li>Memory access</li>
+<li>ALU operations</li>
+</ul>
+<p>This means that the operands for a given instruction either both operate on registers, or they operate on memory. This is in contrast to many <code>CISC</code> ISAs (like <code>x86</code>) that are known as <em>register-memory</em> architectures, where any one operand of a given instruction may operate on memory or a register.</p>
+<p>The RISC-V ISA defines several base integer (four, at the time of writing, to be exact) ISAs. The two primary ISAs are the 32-bit integer (<abbr>RV32I</abbr>) variant and the 64-bit integer (<abbr>RV64I</abbr>) variant. One of these base ISAs must be present in any valid implementation. It is important to note that the RV32I variant is not a strict super set of the RV64I variant. This decision was made consciously to allow implementors to make optimizations as needed to meet any memory or power constraints. This is also the reason that so many optional extensions exist. These extensions range from multiplication or floating-point arithmetic to compressed instructions to bit manipulation.</p>
+<p>RISC-V CPU implementations that are meant to be suitable for general purpose computing generally implement the extensions <code>I</code>, <code>M</code>, <code>A</code>, <code>F</code>, <code>D</code>, <code>Zicsr</code>, <code>Zifencei</code>, and <code>C</code>. This set of extensions are so commonly implemented that they are denoted as <code>RV32GC</code> and <code>RV64GC</code> for 32 and 64 bits respectively.</p>
+<p>There is one more member in the RISC-V family. The privileged ISA. This ISA covers &quot;all aspects of RISC-V systems beyond the unprivileged ISA, including privileged instructions as well as additional
+functionality required for running operating systems and attaching external devices.&quot; The privileged ISA outlines the instructions needed to support operating systems and hypervisors, not just running applications on bare metal.</p>
+<blockquote>
+<p>If you have any thoughts or questions about this post, feel free to start a <a rel="noopener" target="_blank" href="https://github.com/cskwrd/cskwrd.github.io/discussions">discussion</a>.</p>
+</blockquote>
 
-* https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
-* https://www.netlify.com/docs/redirects/#custom-404
-
--->
-
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/eleventy-base-blog/blog/posts/vpn-on-a-train/">How to Build a Train Station One VPN at a Time</a></li><li class="links-nextprev-next">Next →<br><a href="/eleventy-base-blog/blog/posts/still-here/">Still Here!</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -445,7 +633,7 @@ This will work for both GitHub pages and Netlify:
 			<a class="blue" href="/eleventy-base-blog/blog/feed.xml">RSS</a>
 		</footer>
 
-		<!-- This page `/eleventy-base-blog/404.html` was built on 2024-10-15T03:14:27.592Z -->
+		<!-- This page `/eleventy-base-blog/blog/posts/risc-v-new-kid-on-the-chip/` was built on 2024-10-15T03:14:27.593Z -->
 		<script type="module" src="/eleventy-base-blog/dist/rJ3_G-2ArF.js"></script>
 		<script>
 			function updateDate() {

@@ -1,4 +1,0 @@
-Sitemap: https://cskwrd.github.io/sitemap.xml
-User-Agent: *
-Allow: /
-Host: https://cskwrd.github.io

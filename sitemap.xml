@@ -1,104 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://cskwrd.github.io/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/about/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/1/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/2/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/automatic-resume-engine/</loc>
-        <lastmod>2023-06-01</lastmod>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/hello-world/</loc>
-        <lastmod>2023-05-04</lastmod>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/risc-v-new-kid-on-a-chip/</loc>
-        <lastmod>2023-08-01</lastmod>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/still-here/</loc>
-        <lastmod>2024-05-04</lastmod>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/blog/posts/vpn-on-a-train/</loc>
-        <lastmod>2023-07-01</lastmod>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/categories/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/categories/knowledge-nibbles/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/categories/project/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/categories/site-news/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/contact/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/privacy/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/automation/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/career/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/docker/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/inforamtion/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/isa/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/linux/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/networking/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/news/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/notice/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/resume/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/risc-v/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/ssh/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/wireguard/</loc>
-    </url>
-    <url>
-        <loc>https://cskwrd.github.io/tags/workflow/</loc>
-    </url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/posts/hello-world/</loc>
+		<lastmod>2023-05-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/posts/automatic-resume-engine/</loc>
+		<lastmod>2023-06-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/posts/vpn-on-a-train/</loc>
+		<lastmod>2023-07-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/posts/risc-v-new-kid-on-the-chip/</loc>
+		<lastmod>2023-08-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/posts/still-here/</loc>
+		<lastmod>2024-05-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/about/</loc>
+		<lastmod>2024-10-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/</loc>
+		<lastmod>2024-10-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/tags/</loc>
+		<lastmod>2024-10-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/</loc>
+		<lastmod>2024-10-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/feed.xml</loc>
+		<lastmod>2024-10-15</lastmod>
+	</url>
 </urlset>
