@@ -28,26 +28,26 @@
 	
 	<url>
 		<loc>https://cskwrd.github.io/eleventy-base-blog/about/</loc>
-		<lastmod>2024-10-15</lastmod>
+		<lastmod>2024-10-16</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/</loc>
-		<lastmod>2024-10-15</lastmod>
+		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/archive/</loc>
+		<lastmod>2024-10-16</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/tags/</loc>
-		<lastmod>2024-10-15</lastmod>
+		<lastmod>2024-10-16</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://cskwrd.github.io/eleventy-base-blog/</loc>
-		<lastmod>2024-10-15</lastmod>
+		<lastmod>2024-10-16</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://cskwrd.github.io/eleventy-base-blog/blog/feed.xml</loc>
-		<lastmod>2024-10-15</lastmod>
+		<lastmod>2024-10-16</lastmod>
 	</url>
 </urlset>

@@ -16,20 +16,6 @@
 }
 
 /* Theme colors */
-/* :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
-
-	--background-color: #fff;
-
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
-
-	--syntax-tab-size: 2;
-} */
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
@@ -45,20 +31,6 @@
 	--syntax-tab-size: 2;
 }
 
-/* @media (prefers-color-scheme: dark) {
-	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8; */
-
-		/* --text-color is assigned to --color-gray-_ above */
-		/* --text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
-
-		--background-color: #15202b;
-	}
-} */
 /* Media query for small screens */
 @media (max-width: 600px) {
 	.header-blocks:last-child {
@@ -244,13 +216,6 @@ header {
 	font-size: 24px;
 	font-weight: bold;
 }
-.header-date {
-	font-size: 18px;
-	display: none; /* Hide by default, show with JS */
-}
-.header-date .time {
-	color: #ff0;
-}
 .header-main {
 	display: flex;
 	justify-content: center;
@@ -385,13 +350,20 @@ header {
 }
 
 /* Styles for when JavaScript is not available */
-.no-js .header-date {
-	display: none !important;
-}
 @media (min-width: 601px) {
 	.no-js .header-top {
 		flex-direction: row;
 	}
+}
+.header-date {
+	font-size: 18px;
+	display: none; /* Hide by default, show with JS */
+}
+.header-date .time {
+	color: #ff0;
+}
+.no-js .header-date {
+	display: none !important;
 }</style>
 	</head>
 	<body>
@@ -400,10 +372,12 @@ header {
 		<header>
 			<div class="header-top">
 				<div class="header-title">
-					<span>P889</span>
+					<span>P531</span>
 					<span class="service-name">BLOGFAX</span>
 				</div>
-				<div class="header-date" id="current-date"></div>
+				
+<div class="header-date" id="current-date"></div>
+
 			</div>
 			<div class="header-main">
 				<div class="header-blocks">
@@ -444,38 +418,12 @@ header {
 
 		<footer class="footer">
 			<a class="red" href="/eleventy-base-blog/about">About</a>
-			<a class="green" href="/eleventy-base-blog/blog">Archives</a>
+			<a class="green" href="/eleventy-base-blog/blog/archive/">Archive</a>
 			<a class="yellow" href="https://github.com/cskwrd">GitHub</a>
 			<a class="blue" href="/eleventy-base-blog/blog/feed.xml">RSS</a>
 		</footer>
 
-		<!-- This page `/eleventy-base-blog/blog/tags/linux/` was built on 2024-10-15T03:14:27.718Z -->
-		<script type="module" src="/eleventy-base-blog/dist/rJ3_G-2ArF.js"></script>
-		<script>
-			function updateDate() {
-				const now = new Date();
-				const dateOptions = { 
-					weekday: 'short', 
-					day: '2-digit', 
-					month: 'short'
-				};
-				const timeOptions = {
-					hour: '2-digit',
-					minute: '2-digit',
-					second: '2-digit',
-					hour12: false
-				};
-				
-				const dateString = now.toLocaleDateString('en-GB', dateOptions).replace(/,/g, '');
-				let timeString = now.toLocaleTimeString('en-GB', timeOptions);
-				timeString = timeString.replace(/(:)(?=[^:]*$)/, '/');
-				
-				const dateElement = document.getElementById('current-date');
-				dateElement.innerHTML = `<span>${dateString}</span>&nbsp;<span class="time">${timeString}</span>`;
-				dateElement.style.display = 'flex';  // Show the date/time element
-			}
-			updateDate();
-			setInterval(updateDate, 1000);
-		</script>
+		<!-- This page `/eleventy-base-blog/blog/tags/linux/` was built on 2024-10-16T01:48:10.583Z -->
+		<script type="module" src="/eleventy-base-blog/dist/escpfdp1Xi.js"></script>
 	</body>
 </html>

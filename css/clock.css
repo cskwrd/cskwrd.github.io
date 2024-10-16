@@ -1,0 +1,10 @@
+.header-date {
+	font-size: 18px;
+	display: none; /* Hide by default, show with JS */
+}
+.header-date .time {
+	color: #ff0;
+}
+.no-js .header-date {
+	display: none !important;
+}
