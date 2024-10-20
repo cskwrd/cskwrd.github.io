@@ -3,27 +3,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>BlogFax</title>
   <subtitle>Where curiosity crashes into technology, well, programming most of the time.</subtitle>
-  <link href="https://a.crt.tv/blog/feed.xml" rel="self" />
-  <link href="https://a.crt.tv/" />
+  <link href="https://on.a.crt.tv/blog/feed.xml" rel="self" />
+  <link href="https://on.a.crt.tv/" />
   <updated>2024-05-04T00:00:00Z</updated>
-  <id>https://a.crt.tv/</id>
+  <id>https://on.a.crt.tv/</id>
   <author>
     <name>cskwrd</name>
   </author>
   <entry>
     <title>Still Here!</title>
-    <link href="https://a.crt.tv/blog/posts/still-here/" />
+    <link href="https://on.a.crt.tv/blog/posts/still-here/" />
     <updated>2024-05-04T00:00:00Z</updated>
-    <id>https://a.crt.tv/blog/posts/still-here/</id>
+    <id>https://on.a.crt.tv/blog/posts/still-here/</id>
     <content type="html">&lt;p&gt;Still here! Sorry, this padawan needed to do some more learning... Hopefully, there will be more posts this year. I am also planning to clean up the theme a bit as well.&lt;/p&gt;
 &lt;p&gt;May the fourth be with you!&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>RISC-V: The New Kid on the Chip</title>
-    <link href="https://a.crt.tv/blog/posts/risc-v-new-kid-on-the-chip/" />
+    <link href="https://on.a.crt.tv/blog/posts/risc-v-new-kid-on-the-chip/" />
     <updated>2023-08-01T00:00:00Z</updated>
-    <id>https://a.crt.tv/blog/posts/risc-v-new-kid-on-the-chip/</id>
+    <id>https://on.a.crt.tv/blog/posts/risc-v-new-kid-on-the-chip/</id>
     <content type="html">&lt;p&gt;RISC-V is a new instruction set architecture (&lt;abbr&gt;ISA&lt;/abbr&gt;). To be extremely accurate, RISC-V is a &lt;em&gt;family&lt;/em&gt; of ISAs, but it is common to refer to them as &lt;em&gt;the&lt;/em&gt; RISC-V ISA. An ISA specifies the behaviors a given CPU manufacturer&#39;s processor implementation must exhibit in order to maintain binary compatibility with other implementations. To more easily reason and speak about ISAs, they are often given a classification. The seemingly most common classification being the architectural complexity, or more simply put, how many instructions are included in the specification. Using this form of classification, an ISA falls into one of two categories:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Complex instruction set computers (&lt;a href=&quot;https://en.wikipedia.org/wiki/Complex_instruction_set_computer&quot;&gt;CISC&lt;/a&gt;)&lt;/li&gt;
@@ -49,9 +49,9 @@ functionality required for running operating systems and attaching external devi
   </entry>
   <entry>
     <title>How to Build a Train Station One VPN at a Time</title>
-    <link href="https://a.crt.tv/blog/posts/vpn-on-a-train/" />
+    <link href="https://on.a.crt.tv/blog/posts/vpn-on-a-train/" />
     <updated>2023-07-01T00:00:00Z</updated>
-    <id>https://a.crt.tv/blog/posts/vpn-on-a-train/</id>
+    <id>https://on.a.crt.tv/blog/posts/vpn-on-a-train/</id>
     <content type="html">&lt;p&gt;Like most of us in the software industry, I have a home lab set up at, well, home. In my lab I run various web services and tools for fun, for family, to learn, or for their utility. To save time and ensure my sanity in some cases, I use tools like Ansible, Docker, and in some cases even K3s. Today I am going to walk through installing &lt;a href=&quot;https://www.flatcar.org/&quot;&gt;Flatcar Container Linux&lt;/a&gt; on a bare metal VPS, then configuring a WireGuard VPN server.&lt;/p&gt;
 &lt;h2 id=&quot;things-you-ll-need&quot;&gt;Things You&#39;ll Need&lt;/h2&gt;
 &lt;ul&gt;
@@ -216,9 +216,9 @@ WG_PKA_PEER_LIST=
   </entry>
   <entry>
     <title>My Automatic Resume Engine</title>
-    <link href="https://a.crt.tv/blog/posts/automatic-resume-engine/" />
+    <link href="https://on.a.crt.tv/blog/posts/automatic-resume-engine/" />
     <updated>2023-06-01T00:00:00Z</updated>
-    <id>https://a.crt.tv/blog/posts/automatic-resume-engine/</id>
+    <id>https://on.a.crt.tv/blog/posts/automatic-resume-engine/</id>
     <content type="html">&lt;p&gt;I want to share my workflow for maintaining a resume in a repository hosted on GitHub. I will cover my motivation for doing it this way, my process, the important design decisions I have made up to this point, and finally some improvements that could be interesting projects to work on.&lt;/p&gt;
 &lt;h2 id=&quot;the-motivation&quot;&gt;The Motivation&lt;/h2&gt;
 &lt;p&gt;When applying for jobs, it&#39;s common to receive advice along the lines of &amp;quot;tailor your resume to the job posting.&amp;quot; While good advice, it can be quite a chore maintaining multiple versions, tracking edits, and keeping various details in sync. Similarly, a resume that you might use for an online application might not be suitable for a real, live human.&lt;/p&gt;
@@ -270,9 +270,9 @@ WG_PKA_PEER_LIST=
   </entry>
   <entry>
     <title>Hello World!</title>
-    <link href="https://a.crt.tv/blog/posts/hello-world/" />
+    <link href="https://on.a.crt.tv/blog/posts/hello-world/" />
     <updated>2023-05-04T00:00:00Z</updated>
-    <id>https://a.crt.tv/blog/posts/hello-world/</id>
+    <id>https://on.a.crt.tv/blog/posts/hello-world/</id>
     <content type="html">&lt;p&gt;Hello, World! This marks the start of my blog. To start it will be more like brain dumps of information I am working through at the moment. Notes to myself, really.&lt;/p&gt;
 &lt;p&gt;May the fourth be with you!&lt;/p&gt;
 </content>
