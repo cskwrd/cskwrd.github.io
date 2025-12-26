@@ -5,11 +5,126 @@
   <subtitle>Where curiosity crashes into technology, well, programming most of the time.</subtitle>
   <link href="https://on.a.crt.tv/blog/feed.xml" rel="self" />
   <link href="https://on.a.crt.tv/" />
-  <updated>2024-05-04T00:00:00Z</updated>
+  <updated>2025-12-25T00:00:00Z</updated>
   <id>https://on.a.crt.tv/</id>
   <author>
     <name>cskwrd</name>
   </author>
+  <entry>
+    <title>Merry Christmas</title>
+    <link href="https://on.a.crt.tv/blog/posts/2025-xmas-card/" />
+    <updated>2025-12-25T00:00:00Z</updated>
+    <id>https://on.a.crt.tv/blog/posts/2025-xmas-card/</id>
+    <content type="html">&lt;style&gt;
+  .tic80-wrapper {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tic80-container {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 50%;
+    position: relative;
+  }
+
+  .tic80-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+
+  .tic80-play {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: #1a1c2c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image-rendering: pixelated;
+    cursor: pointer;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;tic80-wrapper&quot;&gt;
+  &lt;div class=&quot;tic80-container&quot;&gt;
+    &lt;canvas class=&quot;tic80-canvas&quot; id=&quot;canvas&quot; oncontextmenu=&quot;event.preventDefault()&quot; tabindex=&quot;1&quot;&gt;
+    &lt;/canvas&gt;
+
+    &lt;div class=&quot;tic80-play&quot; id=&quot;tic80-play&quot;&gt;
+      &lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAF9JREFUOE+d0jsOACAIA1B6/0NjHDB+UFtcnPpC0sLd3cwMAPqvPgQQQRU6ABW6Aiz0BX4QDdwgGdihMjCgvUZlB73y0gXzViQgGxkFvNb5BJhZpwATTFtQggtQCQbQAJ4FQA3PbK2EAAAAAElFTkSuQmCC&quot; alt=&quot;Play&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+  import startTic80 from &#39;/js/tic80.js&#39;
+
+  const initialize = () =&gt; {
+    const canvasSelector = &#39;#canvas&#39;
+    const canvasElement = document.querySelector(canvasSelector)
+    const playElement = document.getElementById(&#39;tic80-play&#39;)
+
+    const options = {
+      canvas: canvasElement,
+      arguments: [&#39;/carts/xmas2025.tic&#39;],
+      saveAs (blob, filename) {
+        const url = URL.createObjectURL(blob)
+
+        const link = document.createElement(&#39;a&#39;)
+        link.href = url
+        link.download = filename
+
+        link.click()
+      },
+
+      showAddPopup (callback) {
+        callback(null, null)
+        var input = document.createElement(&#39;input&#39;)
+        input.type = &#39;file&#39;
+        input.click()
+        input.addEventListener(&#39;change&#39;, (event) =&gt; {
+          const file = event.target.files[0]
+          if (file) {
+            var reader = new FileReader
+            reader.onload = function(event) {
+              var rom = new Uint8Array(event.target.result)
+              callback(file.name, rom)
+            }
+            reader.readAsArrayBuffer(file)
+          }
+        })
+      },
+
+      preRun: [
+        function (module) {
+          module.ENV.SDL_EMSCRIPTEN_KEYBOARD_ELEMENT = canvasSelector
+        }
+      ]
+    }
+
+    canvasElement.addEventListener(&#39;click&#39;, () =&gt; {
+      canvasElement.focus()
+    })
+
+    playElement.addEventListener(&#39;click&#39;, () =&gt; {
+      playElement.style.display = &#39;none&#39;
+      canvasElement.focus()
+      startTic80(options)
+    })
+  }
+
+  window.addEventListener(&#39;DOMContentLoaded&#39;, initialize)
+&lt;/script&gt;
+</content>
+  </entry>
   <entry>
     <title>Still Here!</title>
     <link href="https://on.a.crt.tv/blog/posts/still-here/" />
