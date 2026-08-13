@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="feed/pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  
   <title>BlogFax</title>
   <subtitle>Where curiosity crashes into technology, well, programming most of the time.</subtitle>
   <link href="https://on.a.crt.tv/blog/feed.xml" rel="self" />
