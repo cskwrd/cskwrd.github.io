@@ -75,7 +75,7 @@
 
     const options = {
       canvas: canvasElement,
-      arguments: [&#39;/carts/xmas2025.tic&#39;],
+      arguments: [&#39;/blog/posts/2025-xmas-card/xmas2025.tic&#39;],
       saveAs (blob, filename) {
         const url = URL.createObjectURL(blob)
 
